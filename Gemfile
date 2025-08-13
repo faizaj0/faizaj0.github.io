@@ -22,6 +22,7 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'classifier-reborn'
+    gem "jekyll-terser"
 end
 
 # Gems required by plugins (moved from other_plugins group)
