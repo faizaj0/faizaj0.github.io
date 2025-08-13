@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.3"
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do
-    gem 'jekyll-archives'  # Note: not jekyll-archives-v2 for GitHub Actions
+    gem 'jekyll-archives'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
     gem 'jekyll-get-json'
@@ -21,9 +21,17 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    gem 'classifier-reborn'
 end
+
+# Gems required by plugins (moved from other_plugins group)
+gem 'css_parser'
+gem 'feedjira'
+gem 'httparty'
+gem 'observer'
+gem 'ostruct'
 
 # Development gems
 group :development do
-  gem 'webrick'
+    gem 'webrick'
 end
